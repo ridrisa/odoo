@@ -1,0 +1,48 @@
+<odoo>
+    <record id="view_courier_form" model="ir.ui.view">
+        <field name="name">courier.form</field>
+        <field name="model">courier.model</field>
+        <field name="arch" type="xml">
+            <form string="Courier">
+                <sheet>
+                    <group>
+                        <field name="name"/>
+                        <field name="national_id"/>
+                        <field name="iqama_number"/>
+                        <field name="iqama_expiry"/>
+                        <field name="iqama_attachment"/>
+                        <field name="passport_number"/>
+                        <field name="passport_expiry"/>
+                        <field name="passport_attachment"/>
+                        <field name="driving_license_number"/>
+                        <field name="driving_license_expiry"/>
+                        <field name="driving_license_attachment"/>
+                        <field name="contact_number"/>
+                        <field name="emergency_contact"/>
+                        <field name="emergency_contact_number"/>
+                        <field name="nationality"/>
+                        <field name="status"/>
+                        <field name="created_date"/>
+                        <field name="vehicle_ids"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="view_courier_tree" model="ir.ui.view">
+        <field name="name">courier.tree</field>
+        <field name="model">courier.model</field>
+        <field name="arch" type="xml">
+            <tree string="Courier">
+                <field name="name"/>
+                <field name="national_id"/>
+                <field name="iqama_number"/>
+                <field name="passport_number"/>
+                <field name="driving_license_number"/>
+                <field name="contact_number"/>
+                <field name="status"/>
+            </tree>
+        </field>
+    </record>
+</odoo>
