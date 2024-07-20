@@ -1,0 +1,7 @@
+<status display="block" id="docs">
+
+<odoo>
+    <menuitem id="menu_vehicle_root" name="Vehicles"/>
+    <menuitem id="menu_vehicle" name="Vehicles" parent="menu_vehicle_root" action="action_vehicle"/>
+</odoo>
+
