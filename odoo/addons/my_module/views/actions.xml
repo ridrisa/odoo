@@ -1,5 +1,3 @@
-<status display="block" id="docs">
-
 <odoo>
     <record id="action_vehicle" model="ir.actions.act_window">
         <field name="name">Vehicles</field>
