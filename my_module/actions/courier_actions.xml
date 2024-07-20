@@ -1,0 +1,7 @@
+<odoo>
+    <record id="action_courier" model="ir.actions.act_window">
+        <field name="name">Couriers</field>
+        <field name="res_model">courier.model</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+</odoo>
