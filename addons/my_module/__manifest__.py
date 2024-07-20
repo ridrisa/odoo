@@ -1,10 +1,8 @@
 {
     'name': 'My Module', 'version': '1.0', 'category': 'Custom',
    'summary': 'Custom Module for Vehicles, Couriers, and Shipments',
-   'description': " ""
-    This module manages vehicles, couriers, and shipments."
-   ",
-   'author': 'Your Name',
+   'description': "This module manages vehicles, couriers, and shipments.",
+   'author': 'The Great Digalyzer',
     'depends': ['base', 'sale'],
     'data': [
         'security/ir.model.access.csv',

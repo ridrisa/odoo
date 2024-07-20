@@ -1,0 +1,41 @@
+<odoo>
+    <record id="view_vehicle_form" model="ir.ui.view">
+        <field name="name">vehicle.form</field>
+        <field name="model">vehicle.model</field>
+        <field name="arch" type="xml">
+            <form string="Vehicle">
+                <sheet>
+                    <group>
+                        <group>
+                            <field name="name"/>
+                            <field name="car_status"/>
+                            <field name="make"/>
+                            <field name="model"/>
+                            <field name="year"/>
+                            <field name="plate_letters"/>
+                            <field name="plate_numbers"/>
+                            <field name="color"/>
+                            <field name="license_plates"/>
+                            <field name="photo"/>
+                        </group>
+                        <group>
+                            <field name="replacement_original_car"/>
+                            <field name="date_of_first_receive"/>
+                            <field name="last_action"/>
+                            <field name="contract_type"/>
+                            <field name="replacement_for"/>
+                            <field name="added_by"/>
+                            <field name="type"/>
+                            <field name="own_car_plate"/>
+                            <field name="own_car_make"/>
+                            <field name="own_car_model"/>
+                            <field name="own_car_registration"/>
+                            <field name="passport_attachment"/>
+                            <field name="courier_id"/>
+                        </group>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+</odoo>

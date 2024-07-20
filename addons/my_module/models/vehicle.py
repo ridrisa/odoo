@@ -46,3 +46,9 @@ class Vehicle(models.Model):
     own_car_registration = fields.Binary(string='Own Car Registration')
     passport_attachment = fields.Binary(string='Passport Attachment')
     courier_id = fields.Many2one('courier.model', string='Courier')
+
+    @api.constrains('year')
+    def _check_year(self):
+        for record in self:
+            if record.year < 1900 or record.year > fields.Date.today().year:
+                raise ValidationError("The year must be between 1900 and the current year.")

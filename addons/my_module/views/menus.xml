@@ -7,3 +7,4 @@
     <menuitem id="menu_courier" name="Couriers" parent="menu_courier_root" action="action_courier"/>
     <menuitem id="menu_shipment" name="Shipments" parent="menu_shipment_root" action="action_shipment"/>
 </odoo>
+
