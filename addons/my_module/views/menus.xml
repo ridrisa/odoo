@@ -1,10 +1,4 @@
 <odoo>
-    <menuitem id="menu_vehicle_root" name="Vehicles" sequence="1"/>
-    <menuitem id="menu_courier_root" name="Couriers" sequence="2"/>
-    <menuitem id="menu_shipment_root" name="Shipments" sequence="3"/>
-
-    <menuitem id="menu_vehicle" name="Vehicles" parent="menu_vehicle_root" action="action_vehicle"/>
-    <menuitem id="menu_courier" name="Couriers" parent="menu_courier_root" action="action_courier"/>
-    <menuitem id="menu_shipment" name="Shipments" parent="menu_shipment_root" action="action_shipment"/>
+    <menuitem id="menu_vehicle_root" name="Vehicle Management"/>
+    <menuitem id="menu_vehicle" name="Vehicles" parent="menu_vehicle_root" action="my_module.action_vehicle"/>
 </odoo>
-
