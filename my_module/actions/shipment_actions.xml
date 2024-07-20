@@ -1,0 +1,7 @@
+<odoo>
+    <record id="action_shipment" model="ir.actions.act_window">
+        <field name="name">Shipments</field>
+        <field name="res_model">shipment.model</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+</odoo>
