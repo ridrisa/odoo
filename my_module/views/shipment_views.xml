@@ -1,0 +1,36 @@
+<odoo>
+    <record id="view_shipment_form" model="ir.ui.view">
+        <field name="name">shipment.form</field>
+        <field name="model">shipment.model</field>
+        <field name="arch" type="xml">
+            <form string="Shipment">
+                <sheet>
+                    <group>
+                        <field name="name"/>
+                        <field name="courier_id"/>
+                        <field name="hub"/>
+                        <field name="status"/>
+                        <field name="dispatch_date"/>
+                        <field name="received_date"/>
+                        <field name="order_ids"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="view_shipment_tree" model="ir.ui.view">
+        <field name="name">shipment.tree</field>
+        <field name="model">shipment.model</field>
+        <field name="arch" type="xml">
+            <tree string="Shipment">
+                <field name="name"/>
+                <field name="courier_id"/>
+                <field name="hub"/>
+                <field name="status"/>
+                <field name="dispatch_date"/>
+                <field name="received_date"/>
+            </tree>
+        </field>
+    </record>
+</odoo>
