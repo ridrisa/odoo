@@ -1,0 +1,75 @@
+<odoo>
+    <record id="view_courier_master_sheet_tree" model="ir.ui.view">
+        <field name="name">courier.master.sheet.tree</field>
+        <field name="model">courier.master.sheet</field>
+        <field name="arch" type="xml">
+            <tree string="Courier Master Sheet">
+                <field name="name"/>
+                <field name="joining_date"/>
+                <field name="city"/>
+                <field name="barq_id"/>
+                <field name="status"/>
+                <field name="mobile_number"/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="view_courier_master_sheet_form" model="ir.ui.view">
+        <field name="name">courier.master.sheet.form</field>
+        <field name="model">courier.master.sheet</field>
+        <field name="arch" type="xml">
+            <form string="Courier Master Sheet">
+                <group>
+                    <field name="name"/>
+                    <field name="joining_date"/>
+                    <field name="city"/>
+                    <field name="barq_id"/>
+                    <field name="status"/>
+                    <field name="mobile_number"/>
+                    <field name="id_number"/>
+                    <field name="jahez_driver_id"/>
+                    <field name="hunger_rider_id"/>
+                    <field name="mrsool_icourierid"/>
+                    <field name="project"/>
+                    <field name="sponsorshipstatus"/>
+                    <field name="car"/>
+                    <field name="plate"/>
+                    <field name="last_working_day"/>
+                    <field name="iban"/>
+                    <field name="bank_certificate"/>
+                    <field name="supervisor"/>
+                    <field name="iqama_copy"/>
+                    <field name="email"/>
+                    <field name="date_of_birth"/>
+                    <field name="nationality"/>
+                    <field name="profession"/>
+                    <field name="expiry_date"/>
+                    <field name="tshirts_received"/>
+                    <field name="wps"/>
+                    <field name="sponsorship_transferred_in"/>
+                    <field name="sponsorship_transferred_count"/>
+                    <field name="bank_name"/>
+                    <field name="transfer_fees"/>
+                    <field name="date_of_transfer_request"/>
+                    <field name="own_car"/>
+                    <field name="own_car_plate"/>
+                    <field name="own_car_make"/>
+                    <field name="own_car_model"/>
+                    <field name="own_car_registration"/>
+                    <field name="passport_attachment"/>
+                    <field name="national_location_attachment"/>
+                    <field name="contract_attachment"/>
+                </group>
+            </form>
+        </field>
+    </record>
+
+    <record id="action_courier_master_sheet" model="ir.actions.act_window">
+        <field name="name">Courier Master Sheet</field>
+        <field name="res_model">courier.master.sheet</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+    <menuitem id="menu_courier_master_sheet" name="Courier Master Sheet"
+              action="action_courier_master_sheet" parent="base.menu_custom"/>
+</odoo>
