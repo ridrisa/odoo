@@ -1,0 +1,9 @@
+<status display="block" id="docs">
+
+<odoo>
+    <record id="action_vehicle" model="ir.actions.act_window">
+        <field name="name">Vehicles</field>
+        <field name="res_model">my_module.vehicle</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+</odoo>
