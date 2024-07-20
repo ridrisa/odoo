@@ -1,0 +1,4 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_vehicle_model,access_vehicle_model,model_vehicle_model,base.group_user,1,1,1,1
+access_courier_model,access_courier_model,model_courier_model,base.group_user,1,1,1,1
+access_shipment_model,access_shipment_model,model_shipment_model,base.group_user,1,1,1,1
