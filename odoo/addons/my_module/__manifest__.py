@@ -1,12 +1,16 @@
 {
     'name': 'My Module',
     'version': '1.0',
+    'category': 'Uncategorized',
+    'summary': 'Module for Courier Master Sheet Management',
+    'description': """
+        Module to manage Courier Master Sheets.
+    """,
     'depends': ['base'],
     'data': [
-        'views/actions.xml',
-        'views/menus.xml',
+        'security/ir.model.access.csv',
+        'views/courier_master_sheet_views.xml',
     ],
     'installable': True,
-    'auto_install': False,
-    'application': True
+    'application': True,
 }
